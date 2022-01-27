@@ -45,7 +45,7 @@ class Order extends \AloDokter\Rest {
 	 * @return   array|WP_Error
 	 * @since    1.0.0
 	 */
-	public function add_to_cart( $data ) {
+	public function add_to_cart( ) {
 
 		if(
 			is_user_logged_in() &&
@@ -138,7 +138,7 @@ class Order extends \AloDokter\Rest {
 	 * @return   array|WP_Error
 	 * @since    1.0.0
 	 */
-	public function do_checkout( $data ) {
+	public function do_checkout( ) {
 
 		if(
 			is_user_logged_in() &&

@@ -39,7 +39,7 @@ class Product extends \AloDokter\Rest {
 	 * @return   array|WP_Error
 	 * @since    1.0.0
 	 */
-	public function list_product( $data ) {
+	public function list_product() {
 
 		if(
 			is_user_logged_in() &&

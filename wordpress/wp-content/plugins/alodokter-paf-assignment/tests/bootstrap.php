@@ -36,3 +36,10 @@ tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
 // Start up the WP testing environment.
 require "{$_tests_dir}/includes/bootstrap.php";
+
+require_once( dirname( dirname( __FILE__ ) ) . '/rests/main.php' );
+require_once( dirname( dirname( __FILE__ ) ) . '/rests/order.php' );
+require_once( dirname( dirname( __FILE__ ) ) . '/rests/product.php' );
+
+// Require a main class for all tests
+require_once( 'main.php' );
